@@ -1,7 +1,7 @@
 import React from 'react';
 //import Naukrilogo from './assets/Naukrilogo(1).jpg'
 import { FaSearch } from 'react-icons/fa';
-import { Menu } from '@headlessui/react';
+//import { Menu } from '@headlessui/react';
 
 const Navbar = () => {
   return(
