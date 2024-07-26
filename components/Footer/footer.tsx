@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-white text-white p-4 flex justify-around fixed bottom-0 w-full">
         <div>
         <h2 className='text-4xl text-blue-600 font-bold'>naukri</h2>
-        <p className='text-black py-2.5 mt-6'>Contact with Us</p>
+        <p className='text-black py-2.5 mt-5'>Contact with Us</p>
         <div className='flex space-x-4'>
         <p><a  href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-xl text-gray-800 hover:text-black ">
             <FaFacebook /> </a></p>
