@@ -8,8 +8,9 @@ import Card from '../components/Cards/cards';
 import Carousel from '@/components/Carousel/carousel';
 import Footer from '@/components/Footer/footer';
 import SignUp from '@/components/screen/auth/signup';
+import JobCard from '@/components/Cards/JobCard';
 
-const Home: React.FC = () => {
+const Dash: React.FC = () => {
 
   return (
     <>
@@ -23,14 +24,10 @@ const Home: React.FC = () => {
         <Navbar />
       </div>
 
-      <div className='flex items-center max-h-screen'>
-
-        <div className='mr-20 ml-44'>
-          <img src='\images\jobsearchvector1.png' />
-        </div>
+      <div className='flex items-center'>
 
         <div className='w-1/3 p-5'>
-          <Login />
+          <JobCard />
         </div>
 
       </div>
@@ -39,4 +36,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Dash;
