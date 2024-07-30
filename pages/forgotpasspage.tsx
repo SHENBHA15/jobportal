@@ -1,24 +1,23 @@
 // pages/index.tsx
 import React from 'react';
-import Navbar from '@/components/Header/navbar';
-import Login from '@/components/screen/auth/login';
-import Head from 'next/head';
-
 import Card from '../components/Cards/cards';
 import Carousel from '@/components/Carousel/carousel';
 import Footer from '@/components/Footer/footer';
+import Navbar from '@/components/Header/navbar';
+import Login from '@/components/screen/auth/login';
 import SignUp from '@/components/screen/auth/signup';
+import ForgotPassword from '@/components/screen/auth/forgotpassword';
+import Head from 'next/head';
+
 
 const Home: React.FC = () => {
 
   return (
     <>
-
       <Head>
-        <title>Job Portal Login</title>
+        <title>Reset Password</title>
         <meta name="description" content="This is a description of my Next.js app." />
       </Head>
-
       <div>
         <Navbar />
       </div>
@@ -30,7 +29,7 @@ const Home: React.FC = () => {
         </div>
 
         <div className='w-1/3 p-5'>
-          <Login />
+          <ForgotPassword />
         </div>
 
       </div>

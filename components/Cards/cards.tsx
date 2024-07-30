@@ -4,6 +4,7 @@ import { FaMapMarkerAlt, FaRupeeSign, FaBriefcase } from 'react-icons/fa';
 
 interface CardProps {
   role: string;
+  logoURL: string;
   companyName: string;
   rating: number;
   reviews: number;
@@ -17,6 +18,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({
   role,
+  logoURL,
   companyName,
   rating,
   reviews,
@@ -28,16 +30,23 @@ const Card: React.FC<CardProps> = ({
   daysAgo
 }) => {
   return (
-    <div className="border rounded-lg p-4 shadow-md bg-white max-w-2xl m-3">
-      <h1 className='text-3xl font-bold'>{role}</h1>
-      <div className="flex items-center justify-between">
-        <h2 className="text-xl font-bold">{companyName}</h2>
-        <img src='' />
+    <div className="border rounded-lg p-4 shadow-md bg-white max-w-2xl m-3 relative">
+      <div className='flex items-center'>
+        <div>
+          <h1 className='text-3xl font-bold mr-5'>{role}</h1>
+        </div>
+        <div className='w-12 h-12 absolute top-2 right-2'>
+          <img src={logoURL} />
+        </div>
+      </div>
+      <div className="flex items-center align-middle">
+        <h2 className="text-xl font-bold mr-5">{companyName}</h2>
 
-        {/* <div className="flex items-center">
+
+        <div className="flex items-center">
           <span className="text-yellow-500">⭐ {rating}</span>
           <span className="ml-2 text-gray-500">({reviews} Reviews)</span>
-        </div> */}
+        </div>
       </div>
       <div className="mt-2 text-gray-500 flex items-center">
         <div className='flex items-center'>
